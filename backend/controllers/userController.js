@@ -1,5 +1,6 @@
 import userModel from "../models/userModel";
 import validator from 'validator'
+import bcrypt from 'bcryptjs'
 
 
 //REGISTER FUNCTION
