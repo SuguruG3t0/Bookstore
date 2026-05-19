@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
 export const connectDB = async () => {
-    await mongoose.connect('mongodb+srv://<db_username>:<db_password>@teach.xclxs7q.mongodb.net/?appName=Teach')
+    await mongoose.connect('mongodb string key')
         .then(() => console.log('DB Connected'))
 }
