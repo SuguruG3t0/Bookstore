@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import { connectDB } from './config/db';
+import userRouter from './routes/userRoute';
 
 
 
@@ -15,8 +16,9 @@ app.use(express.urlencoded({extended: true}))
 
 // DB
  connectDB()
-// ROUTES
 
+// ROUTES
+app.use('/api/user', userRouter)
 
 
 
